@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.lviiier.totem.MainActivity">
+
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/webview"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="fill_parent"
+
+        />
+
+    <Button
+        android:layout_alignTop="@+id/webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:alpha="0"
+        android:layout_gravity="left|top" />
+
+    <Button
+        android:layout_alignTop="@+id/webview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:alpha="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:alpha="0"
+        android:layout_gravity="right|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:alpha="0"
+        android:layout_gravity="left|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignEnd="@+id/button1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:longClickable="false"
+        android:id="@+id/menu" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/buttonwifi"
+            android:alpha="100"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/button1"
+            android:layout_alignEnd="@+id/button1"
+            android:text="WIFI" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/buttonqs"
+            android:alpha="100"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/button4"
+            android:text="Supporto"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/buttonannulla"
+            android:alpha="100"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/button4"
+            android:text="Annulla"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/waithtesto"
+        android:id="@+id/clessidera"
+        android:alpha="0.5"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:id="@+id/waithtesto"
+            android:text="@string/attendere_wifi"
+            android:textSize="@dimen/abc_action_bar_stacked_max_height"
+            android:layout_marginTop="73dp"
+            android:textColor="@color/background_floating_material_dark"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="103dp"
+            android:layout_height="151dp"
+            android:indeterminate="false"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/logo_lviiier_nero_200"
+            android:scaleType="center" />
+
+    </FrameLayout>
+
+</RelativeLayout>

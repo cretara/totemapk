@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Totem</string>
+    <string name="attendere_wifi">Connessione in corso...</string>
+</resources>
